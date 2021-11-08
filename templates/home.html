@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <!--<table border="=1">
+            <tr>
+            <th>Id</th>
+            <th>instance_type</th>
+            </tr>
+        {% for i in aws %}
+        <tr>
+        <td>{{i.id}}</td>
+        <td>{{i.instance_type}}</td>
+        </tr>
+        {% endfor %}
+        -->
+
+        {% block content %}
+        <h3>Id:</h3>
+        {{data}}
+        <h3>Instance_type:</h3>
+        {{data1}}
+        {% endblock %}
+    </table>
+    </body>
+</html>

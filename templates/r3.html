@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <table border="2">
+            <tr>
+                <th>Id</th>
+                <th>Platform</th>
+                <th>Instance_type</th>
+                <th>Public_ip_address</th>
+                <th>Image.id</th>
+                <th>State</th>
+            </tr>
+            
+                {% for i in aws %}
+                <tr>
+                <td>{{i.id}}</td>
+                <td>{{i.platform}}</td>
+                <td>{{i.instance_type}}</td>
+                <td>{{i.public_ip_address}}</td>
+                <td>{{i.image.id}}</td>
+                <td>{{i.state}}</td>
+                </tr>
+                {% endfor %}
+        </table>
+    </body>
+</html>
